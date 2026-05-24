@@ -1,0 +1,24 @@
+body{
+  background:#111;
+  color:white;
+  font-family:sans-serif;
+  display:flex;
+  justify-content:center;
+  margin-top:50px;
+}
+
+.chat{
+  width:300px;
+  background:#222;
+  padding:20px;
+  border-radius:15px;
+}
+
+input{
+  width:70%;
+  padding:10px;
+}
+
+button{
+  padding:10px;
+}
