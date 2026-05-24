@@ -1,19 +1,20 @@
 function sendMessage(){
 
-  let input = document.getElementById("input");
-  let messages = document.getElementById("messages");
+let input = document.getElementById("input");
+let messages = document.getElementById("messages");
 
-  let userText = input.value;
+let text = input.value;
 
-  messages.innerHTML += `
-    <p><b>You:</b> ${userText}</p>
-  `;
+if(text === "") return;
 
-  let aiReply = "Hello, I am Cyclone AI.";
+messages.innerHTML += `
+<p><b>You:</b> ${text}</p>
+`;
 
-  messages.innerHTML += `
-    <p><b>Cyclone:</b> ${aiReply}</p>
-  `;
+messages.innerHTML += `
+<p><b>Cyclone:</b> Hello ${text}</p>
+`;
 
-  input.value = "";
+input.value = "";
+
 }
